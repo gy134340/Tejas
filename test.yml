@@ -1,0 +1,583 @@
+en:
+  js:
+    api:
+      # start adopting camel case for all frontend interfacing API
+      shared:
+        please_wait: "Please wait..."
+      blogPosts:
+        errors:
+          invalidLockId: "We are having trouble saving your last change. This is caused by having multiple editors opened. Please close the other editors and refresh the page to continue."
+          unauthorized: "Uh oh! It looks like you've been logged out! Click OK to log in again."
+          genericSave: "Uh oh! There's been an error saving this blog post. Please contact us at support@strikingly.com if this problem persists!"
+          genericPublish: "Uh oh! There's been an error publishing this blog post. Please contact us at support@strikingly.com if this problem persists!"
+        messages:
+          confirmPublishUntitledPost: "You haven't entered a title yet. Are you sure you wish to publish?"
+
+      ecommerce:
+        create_order:
+          bad_request: "Uh oh! There's been an error creating the order."
+          internal_error: "Uh oh! There's been an error creating the order."
+        charge_order:
+          bad_request: "Uh oh! There's been an error charging the order. Please contact us at support@strikingly.com if this problem persists!"
+          internal_error: "Uh oh! There's been an error charging the order. Please contact us at support@strikingly.com if this problem persists!"
+        complete:
+          bad_request: "Uh oh! There's been an error completing the order."
+        refund:
+          bad_request: "Uh oh! There's been an error refunding the order. Please contact us at support@strikingly.com if this problem persists!"
+        cancel:
+          bad_request: "Uh oh! There's been an error canceling the order. Please contact us at support@strikingly.com if this problem persists!"
+
+
+      generators:
+        new_year_resolutions:
+          errors:
+            missing_user: "Missing user."
+            invalid: "{{message}}"
+            exception: "Network timeout. Please retry. Our engineering team is looking into it now."
+            oauth_exception: "Your Facebook session has timed out. Please login with Facebook again."
+        generate_from_facebook:
+          errors:
+            missing_user: "Missing user."
+            invalid: "{{message}}"
+            exception: "Network timeout. Please retry. Our engineering team is looking into it now."
+            oauth_exception: "Your Facebook session has timed out. Please login with Facebook again."
+            no_facebook: "Oops, there seems to be some issues with connecting to Facebook. Please check your connection and try again."
+            cant_get_data: "There was an error getting data from Facebook. Please try again."
+            error: 'There has been an error. Our engineers are looking into it now. Please retry!'
+            already_have: "Hey! Looks like you already have a website. Click OK to see it."
+          messages:
+            getting_pages: 'Getting your Facebook Pages...'
+            getting_friends: 'Getting your Facebook friends...'
+            failed_to_get_pages: 'Failed to get list of pages. Please retry.'
+            failed_to_get_friends: 'Failed to get list of friends. Please retry.'
+            to_simplify: 'There has been an error connecting to Facebook. Please login and retry.'
+        generate_from_linkedin:
+          errors:
+            missing_user: "Missing user."
+            invalid: "{{message}}"
+            exception: "Network timeout. Please retry. Our engineering team is looking into it now."
+            oauth_exception: "Your LinkedIn session has timed out. Please login with LinkedIn again."
+        share_on_linkedin:
+          errors:
+            exception: "Something went wrongs. Please retry. Our engineering team is looking into it now."
+      analytics:
+        referrer:
+          direct_traffic: "Direct Traffic"
+        geography:
+          others: "Others"
+        device:
+          desktop: "Desktop"
+          mobile:  "Mobile"
+          others:  "Others"
+        period_title:
+          past_week: "Past week"
+          past_month: "Past month"
+          past_3_months: "Past 3 months"
+          past_year: "Past year"
+          past_24_hours: "Past 24 hours"
+        show:
+          errors:
+            exception: "There's some issue loading your page analytics. Our engineering team is looking into it now."
+            record_not_found: "Page not found."
+      subscriptions:
+        plan:
+          billed_monthly: "Billed monthly"
+          billed_yearly: "Billed yearly"
+          billed_two_year: "Billed every 2 years"
+        check_coupon:
+          errors:
+            invalid_coupon: "Invalid coupon code."
+            expired: "This coupon code has expired."
+      videos:
+        create:
+          errors:
+            invalid: "{{message}}"
+            exception: "There's some issue loading the video. Our engineering team is looking into it now."
+      registrations:
+        create:
+          errors:
+            missing_params: "Email and firstname required."
+            invalid: "{{message}}"
+          success:
+            saved: ""
+        500: "Error in registration. Our engineers are already looking into it. Please send an email to support@strikingly.com if you've any questions."
+
+      jobs:
+        custom_domain_setup:
+          success:
+            connected: "Successfully connected."
+            disconnected: "Successfully disconnected custom domain."
+            need_configuration: "This domain is NOT connected to your site. Please make sure your domain is configured correctly."
+            propagation_note: "After configuring your domain, changes are usually visible within 1-2 hours, but can take up to 48 hours to fully propagate."
+            domain_is_live: "Your domain is live!"
+          errors:
+            exception: 'Network timeout. Please retry. Our engineering team is looking into it now.'
+            invalid: "{{message}}"
+      pages:
+        confirm:
+          delete_site: "Are you absolutely sure you wish to delete the site titled {{name}}? This action is PERMANENT!"
+        shared:
+          errors:
+            access_denied: "Not authorized to perform this operation."
+            session_expired: "Session expired. Please login again to edit the page."
+            record_not_found: "It looks like the page has changed its URL. Click ok to go to the dashboard and select the page you want to edit."
+        update:
+          success:
+            saved: "Page Saved."
+          errors:
+            exeption: "There's some issue saving your content. Our engineering team is looking into it now."
+            invalid: "{{message}}"
+        publish:
+          success:
+            published: "Page published."
+        custom_domain_update:
+          errors:
+            missing_params: "Something went wrong. Please try again. If the problem persists, use the support button to contact us."
+            no_change: "Nothing changed."
+            invalid: "{{message}}"
+            exception: "Network timeout. Please retry. Our engineering team is looking into it now."
+          warnings:
+            non_www_root: 'We strongly recommend "www" in front for root domains. (Submit again to ignore.)'
+          success:
+            saved: "Updated."
+        settings_update:
+          errors:
+            premium_sites_limit_reached: "You reached the limit of published sites using premium features you can use. Please extend your plan."
+            missing_params: "Something went wrong. Please try again. If the problem persists, use the support button to contact us."
+            invalid: "{{message}}"
+          success:
+            permalink_changed: "Page will refresh in few seconds. Click <a href='{{edit_page_http_url}}'>here</a> if it doesn't."
+            saved: "Saved!"
+        collaboration:
+          errors:
+            access_denied: "Not authorized to perform this operation. Please contact with website owner"
+      domains:
+        confirm:
+          delete_dns_record: "Are you sure you want to delete this record?"
+          renew: "You will be charged $24.95 for renewal. Are you sure you want to renew?"
+          renew_for_free: "This domain is included in the price of your yearly plan. Are you sure you want to renew?"
+        errors:
+          send_verification_email_failed: "Failed to send verification email. Please retry or contact us at support@strikingly.com for help."
+          get_registrant_verification_status_failed: "Failed to get registrant verification status. Please retry or contact us at support@strikingly.com for help."
+          update_contact_info_failed: "Failed to update contact info. Please retry or contact us at support@strikingly.com for help."
+          update_nameservers_failed: "Failed to update nameservers. Please retry or contact us at support@strikingly.com for help."
+          release_domain_failed: "Failed to release domain. Please retry or contact us at support@strikingly.com for help."
+          empty_field_warning: "Invalid input."
+          create_user_failed: "Failed to create user account."
+          setup_dns_failed: "Failed to setup DNS."
+          provision_failed: "Failed to provision DNS."
+          get_zone_failed: "Failed to get zone details. Please retry."
+          list_dns_records_failed: "Failed to list DNS records. Please retry."
+          create_dns_record_failed: "Failed to create DNS record. Please retry."
+          get_dns_record_failed: "Failed to get DNS record. Please retry."
+          update_dns_record_failed: "Failed to update DNS record. Please retry."
+          delete_dns_record_failed: "Failed to delete DNS record. Please retry."
+          renew_payment_failed: "Billing for domain renewal has failed. Please check your billing information."
+          renew_failed: "Domain renewal has failed! Please contact us at support@strikingly.com for help."
+
+    pages:
+      alert:
+        feature_limit: "Uh oh! It looks like you're using some Pro features ({{features}}). Please remove them to publish this site!"
+        unknown_publish_support: Uh oh! Your site can't be published right now. Please contact support@strikingly.com for help!
+        blocked_site_or_user: "Uh oh! Your site or account is currently blocked. Please contact support@strikingly.com for help!"
+        downgrade_vip_warning: "You cannot downgrade VIP Plan for now, Please contact us at support@strikingly.com to complete it."
+      dashboard:
+        pub_quota: "You've hit your published site limit! You must unpublish another site before you can publish this one!"
+        pub_failed: "Uh-oh. Publish failed. Please contact us at support@strikingly.com for assistance!"
+        quota_confirm: "OK, I understand"
+        unpub_confirm: "Confirm Unpublish"
+        pub_confirm: "Confirm Publish"
+        unpub_msg: "Are you sure you wish to unpublish? This will make your site go into \"Under Construction\" mode."
+        pub_msg: "This will make your site visible to the world!"
+        cancel: "Cancel"
+        confirm: "Confirm"
+        clone_msg: "Would you like to duplicate this site?"
+        clone_pub_msg:
+          starter: "Note that you have reached your publish limit for your Limited sites. You can clone more sites, but you won't be able to publish them if you use Limited features in them. Continue?"
+          pro: "Note that you have reached your publish limit for your Pro sites. You can clone more sites, but you won't be able to publish them if you use Pro features in them. Continue?"
+        clone_stores_blogs_msg: "Includes store items and blog items"
+        clone_stores_msg: "Includes store items"
+        clone_blogs_msg: "Includes blog items"
+        sort:
+          name: 'Name'
+          created: 'Recently created'
+          updated: 'Recently updated'
+        pricing:
+          additional_sites_limitation_prompt: "You have exceeded the limitation of additional sites during trial, please contact our support if you want more sites."
+      edit:
+        notice:
+          mobile_notice: "Welcome to the Strikingly editor! It looks like you're using a mobile device. Websites that you build with Strikingly look awesome on all devices, but we recommend editing your site on a desktop or laptop."
+          pro_section_notice: "You've selected a Pro section! You can try this section out, but it won't show up on your live site until you upgrade to Pro."
+        confirm:
+          delete_section: "Are you sure you want to delete this section? This action cannot be undone."
+          delete_section_v4: "Are you sure you want to delete this section?"
+          delete_blog_section: "Are you sure you want to delete this section?\n\nBlog posts will NOT be deleted. (Just add the section back to show them again.)"
+          unsaved_changes: "You have unsaved changes on this page. If you navigate away from this page you will lose those changes."
+          delete_library_image: "Are you sure you wish to delete this image?"
+          delete_library_file: "Are you sure you wish to delete this file?"
+          delete_collaborator: "Are you sure you wish to delete this collaborator? They will no longer be able to edit this site!"
+          delete_social_account: "Are you sure you wish to delete this account? The related feeds will not show in page anymore."
+        errors:
+          save_error: "A problem occured while saving your page. Please try again."
+          network_error: "Oops, a network issue occurred, please refresh and try again."
+          upload_network_error: "Oops, a network issue prevents you from uploading, please refresh and try again."
+          effects_network_error: "Oops, a network issue prevents you from adding effects, please refresh and try again."
+          max_slides_reached: "You can only create {{max}} sections here. If you'd like more, let us know using the feedback button in the bottom right!"
+          api_error: "Oops, a network issue occurred. Our engineers have been notified and are looking into it!"
+          get_presigned_post_error: "Uh oh! Something is wrong with the uploader. Please try again or contact us at support@strikingly.com for assistance!"
+          upload_fail: "Upload failed. Please try again or contact us for assistance!"
+          load_files_fail: "Failed to load library. Please try again or contact us for assistance!"
+          delete_file_fail: "Failed to load library. Please try again or contact us for assistance!"
+          multi_file_error: "Please drag 1 file at a time."
+          limit_upload_error: "Please drag no more than 10 files at a time."
+          email_format_error: "Invalid email address!"
+          duplicate_collaborator: "You've already invited this person before!"
+          too_many_invitations: "Sorry! You can only invite 10 people per site."
+          video_type_error: "URL is invalid."
+          already_have_blog: "You already have a blog section on this site!"
+          already_have_ecommerce: "You already have a Store section on this site!"
+          already_have_social_feed: "You already have a Social Feed section on this site!"
+          social_account_connect_error: "Failed to connect you account. Please try again or contact us for assistance!"
+        html_editor:
+          shared:
+            errors:
+          google_maps:
+            enter_location: "Please enter a location!"
+            view_larger_map: "View larger map"
+          ecwid:
+            enter_store_id: "Please enter a Store ID."
+          soundcloud:
+            errors:
+              invalid_url: "Invalid URL! Please use a valid soundcloud.com URL."
+          slides:
+            errors:
+              invalid_url: "Invalid URL! Please use a valid slid.es URL."
+        domain_emails:
+          confirm:
+            delete_entry: "Are you sure you want to delete this entry?"
+          errors:
+            limit_reached: "You can only create {{limit}} emails."
+        rich_text:
+          bold: "Bold"
+          italic: "Italic"
+          underline: "Underline"
+          list : "List"
+          bulleted_list : "Bulleted List"
+          numbered_list : "Numbered List"
+          remove_format : "Remove List"
+          alignment : "Alignment"
+          align_justify : "Justify"
+          align_center : "Center"
+          align_left : "Align Left"
+          align_right : "Align Right"
+          font_family: "Change Font Family"
+          font_size: "Change Font Size"
+          font_size_smaller : "Smaller"
+          font_size_small : "Small"
+          font_size_normal : "Normal"
+          font_size_large : "Large"
+          font_size_larger : "Larger"
+          link : "Link"
+          link_dialog_title : "Link to"
+          link_dialog_web : "Web"
+          link_dialog_email : "Email"
+          link_dialog_email_address : "Address"
+          link_dialog_document : "Document"
+          link_dialog_url: "URL"
+          link_dialog_url_placeholder: "e.g. http://abc.com OR #2 (section number)"
+          link_dialog_email_placeholder: "e.g. john@example.com"
+          link_dialog_open_in_new_tab: "Open in new tab"
+          link_dialog_invalid_email: "Invalid email address"
+          link_dialog_upload_file: "Upload File"
+          link_dialog_remove_link: "Remove Link"
+          link_dialog_remove_email: "Remove Email"
+          link_dialog_remove_document: "Remove Document"
+          confirm_cancel: "You have changed some options. Are you sure you want to close the dialog window?"
+          save: "Save"
+          custom: "Custom"
+          use_default: "Default"
+      blog:
+        confirm:
+          delete_blog_post: "Are you absolutely sure you wish to delete this blog post? This action is PERMANENT!"
+        text:
+          saving: "Saving..."
+          saved: "Saved!"
+          save_error: "Saving error. Contact us (support@strikingly.com) if this problem persists."
+      ecommerce:
+        providers:
+          stripe_connect: 'Stripe'
+          paypal: 'Paypal'
+          alipay: 'Alipay'
+        options:
+          pending: 'Pending'
+          completed: 'Completed'
+          cancelled: 'Cancelled'
+        text:
+          product_name_for_required_error: 'Product Name'
+          price_for_required_error: 'Price'
+          variant_name_for_required_error: 'Option'
+          product_name: 'Add Product Name'
+          description: 'Add product description. Keep it short and sweet!'
+          cta_btn: 'Buy Now'
+          choose_a_type: 'Choose a Type'
+          choose_a_country: 'Choose a Country'
+          edit_btn_add_product: "Add Product"
+          edit_btn_mange_product: "Manage Product"
+          rest_of_world: "Rest of the World"
+          world: "The World"
+        coupon:
+          percentange_description: "{{token}} ({{amount}}% Off)"
+          percentange_for_product_description: "{{token}} ({{amount}}% off for {{product_count}} {{product_name}})"
+          flat_description: "{{token}} ({{amount}} Off)"
+          free_shipping_description: "{{token}} (Free shipping)"
+          detailedDescription: "This coupon will apply {{amount}}% discount off of the the entire order (excluding shipping)."
+          delete_warning: "Are you sure you want to delete this coupon code?"
+          expired: "Expired"
+        confirm:
+          payment_not_set: "You haven't set up your payment gateway for your Simple Store yet! You must set it up in your store settings to enable checkout.\n\nClick OK to publish anyway.\n"
+          payment_not_set_proceed: "You haven't set up your payment gateway for your Simple Store yet! You must set it up in your store settings to enable checkout.\n\nClick OK to proceed.\n"
+          payment_not_set_short: "You haven't set up your payment gateway for your Simple Store yet! You must set it up in your store settings to enable checkout."
+          delete_product: 'Are you sure you want to delete this product?'
+          delete_product_with_coupon: 'Are you sure you want to delete this product?'
+          delete_item: 'Are you sure you want to delete this item?'
+          disconnect_account: 'Are you sure you want to disconnect your {{provider}} account?'
+          cancel_edit: 'Exit the editor without saving?'
+        errors:
+          general_required_error_v1: '{field} is required.'
+          general_required_error_v2: '{field} are required.'
+          image_limication: 'You can upload a maximum of 10 images. Deselect XXX image(s) to continue.'
+          can_not_load_products: "Oops, a network issue occurred, please refresh and try again."
+          invalid_input: "Invalid value."
+          empty_quantity: "Quantity can not be 0 or empty."
+          invalid_quantity: "Out of stock."
+          seller_not_connect_gateway: "Seller has not connected his/her payment gateway. Can not buy now."
+          coupon_no_token: "Coupon code can't be blank!"
+          coupon_repeated_token: "There's already a coupon with the same code!"
+          coupon_no_amount: "Amount can't be blank!"
+          coupon_zero_amount: "Amount can't be 0!"
+      social_feed:
+        text:
+          tweets: "Tweets"
+          posts: "Posts"
+          posts_on_timeline: "Posts on timeline"
+
+    invitations:
+      new:
+        email_hint: "Enter a list of recipients' emails here, or import your contacts by clicking the button above."
+        invitation_sent: "Invitation sent! Remind your friends to sign up to claim your rewards."
+        confirm: "OK"
+        claim_msg: "Unlock this reward! Are you sure?"
+        claim_confirm: "Yes, unlock!"
+        network_error: 'There has been an network error. Refresh the page and try again.'
+      create:
+        errors:
+          missing: "{{message}}"
+    html_editor:
+      script_error: "The HTML you entered contains scripts that cannot be displayed in the editor. <br/><br/> Please preview your site to view your content."
+    traffic_guide:
+      confirm_go_to_editor: "Go to the editor now to update the settings?"
+    student_program:
+      network_error: 'There has been an network error. Refresh the page and try again.'
+      email_denied: "We failed to validate your email address. Check if you entered anything wrong, or contact support if you have any questions."
+    select_template:
+      info:
+        no_site: "Hey, looks like you don't have a site yet. Select a beautiful template here to start!"
+      confirm:
+        ok: "  OK  "
+    app_store:
+      names:
+        html: "HTML"
+        google_maps: "Google Maps"
+        baidu_maps: "Baidu Maps"
+        ecwid: "Ecwid"
+        wufoo: "Wufoo"
+        facebook_comments: "Facebook Comments"
+        soundcloud: "SoundCloud"
+        slides: "Slides"
+        celery: "Celery"
+        instagram: "Websta"
+        eventbrite: "Eventbrite"
+        google_form: "Google Form"
+        mailchimp: "MailChimp"
+        locu: "Locu"
+        slideshare: "SlideShare"
+        medium: "Medium"
+        scribd: "Scribd"
+        photobucket: "PhotoBucket"
+        pinterest: "Pinterest"
+        paypal: "PayPal"
+        disqus: "Disqus"
+        type_form: "Typeform"
+        google_calendar: "Google Calendar"
+      descriptions:
+        html: "Embed any third party service or write any code you want. A powerful tool for advanced users."
+        google_maps: "Show your location!"
+        baidu_maps: "Show your location with a Baidu map."
+        ecwid: "Full e-commerce functionality right on your site. Set up an online store, manage products, and receive payments."
+        wufoo: "Build a form or survey to collect data, feedback, and even payments. Free to start, pay for more volume."
+        facebook_comments: "Let your friends around the world leave their comments here."
+        soundcloud: "Embed a track, album, artist, or collection from SoundCloud."
+        slides: "Slides is a tool for creating, presenting and sharing presentations."
+        celery: "Accept preorders and charge later. Great for crowdfunding and simple e-commerce."
+        instagram: "Display your Instagram pics in a gallery."
+        eventbrite: "Create an event on Eventbrite and embed a widget to sell tickets directly from your website."
+        google_form: "Give a quiz, run a survey, or collect other information with a simple online form."
+        mailchimp: "Use MailChimp to create, send, and track email newsletters. Embed the signup form on your site."
+        locu: "Manage and publish your business listings and offerings with Locu. Showcase them on your site."
+        slideshare: "Embed a slideshow presentation."
+        medium: "Embed a Medium profile, collection, or blog post on your site."
+        scribd: "Embed Scribd documents or books on your site."
+        photobucket: "Play a PhotoBucket slideshow on your site."
+        pinterest: "Show Pinterest Pins, Profiles or Boards on your site."
+        paypal: "Add a PayPal button to your site to receive payments."
+        disqus: "Add a discussion board, and build a community of active readers and commenters."
+        type_form: "Build a beautiful survey or form that pops up in your site. Free to start, pay for advanced features."
+        google_calendar: "Share your Google Calendar with visitors."
+      errors:
+        load_app_config: 'Failed to load app config. This is likely caused by a network issue; try refreshing the page.'
+        init_app_config: 'Failed to initialize app config. This is likely caused by a network issue; try refreshing the page.'
+        create_app_config: 'Failed to create app config. This is likely caused by a network issue; try refreshing the page.'
+        save_app_config: 'Failed to save app config. This is likely caused by a network issue; try refreshing the page.'
+        scribe_url_incorrect: "Incorrect input! Example input: 'http://www.scribd.com/doc/220861572/Aurora-Cidr03'."
+        url_not_fount: 'This URL is not found. Please use a correct one!'
+      tooltips:
+        help_tooltip: 'Read a more detailed tutorial for this app.'
+        pro_app_tooltip: 'To use this app, upgrade to a Pro plan.'
+        upgrade_link_tooltip: 'Upgrade now to unlock Pro apps!'
+    plans:
+      name:
+        starter_monthly: "Limited Monthly"
+        starter_yearly: "Limited Yearly"
+        starter_2y: "Limited 2 Years"
+        pro_monthly: "Pro Monthly"
+        pro_yearly: "Pro Yearly"
+        pro_2y: "Pro 2 Years"
+        pro_3y: "Pro 3 Years"
+        pro_5y: "Pro 5 Years"
+        pro_10y: "Pro 10 Years"
+        vip_yearly: "VIP Yearly"
+        vip_2y: "VIP 2 Years"
+        vip_3y: "VIP 3 Years"
+        vip_5y: "VIP 5 Years"
+        vip_10y: "VIP 10 Years"
+    subscriptions:
+      new:
+        why_billing_info: "We ask for your credit card to prevent interruption of your Strikingly account if you choose to keep your account active after your free period expires. It also allows us to reduce fraud. <br/><br/> Your credit card will not be charged at any point during your free period. If you cancel during the free period, you will not be charged at any time. <br/><br/> We'll even send you an email three days before your free period is over to remind you it's about to expire."
+        billing:
+          billed_message:
+            monthly: "${{price}} per month"
+            yearly: "${{price}} per year"
+            2y: "${{price}} per 2 years"
+            3y: "${{price}} per 3 years"
+            5y: "${{price}} per 5 years"
+            10y: "${{price}} per 10 years"
+          heading: "{{free_period_full_string}} Free &mdash; Guaranteed"
+          coupon_applied_free_period_notice: "You won't be billed immediately. The first {{free_period_days}} days are free. Starting {{billing_start_date}}, you will be billed <strong class='dark'>${{discounted_price}}</strong> and <strong class='dark'>{{billed_message}}</strong> after that."
+          coupon_applied_no_free_period_notice: "You will be billed <strong class='dark'>${{discounted_price}}</strong> and <strong class='dark'>{{billed_message}}</strong> after that."
+          free_period_notice: "You won't be billed immediately. The first {{free_period_days}} days are free. Starting {{billing_start_date}}, you will be billed <strong class='dark'>{{billed_message}}</strong>."
+          no_free_period_notice: "You will be billed <strong class='dark'>{{billed_message}}</strong>."
+        prices:
+          starter_monthly: "${{price}}/month"
+          starter_yearly: "${{price}}/year"
+          starter_2y: "${{price}}/2 years"
+          pro_monthly: "${{price}}/month"
+          pro_yearly: "${{price}}/year"
+          pro_2y: "${{price}}/2 years"
+          pro_3y: "${{price}}/3 years"
+          pro_5y: "${{price}}/5 years"
+          pro_10y: "${{price}}/10 years"
+          vip_yearly: "${{price}}/year"
+          vip_2y: "${{price}}/2 years"
+          vip_3y: "${{price}}/3 years"
+          vip_5y: "${{price}}/5 years"
+          vip_10y: "${{price}}/10 years"
+        coupon:
+          wait: "Wait..."
+          invalid: "Invalid coupon code."
+          applied: "{{percent}}% discount applied!"
+          not_applicable: "The coupon doesn't apply to the plan you choose."
+          applied_notice: "Coupon applied! The coupon is only valid for the first billing period!"
+        periods:
+          month: "month"
+          year: "year"
+          two_year: "2 years"
+          three_year: "3 years"
+          five_year: "5 years"
+          ten_year: "10 years"
+        save: "Save ${{number}}"
+        save_current_plan: "Save ${{number}} from your current plan"
+        save_message:
+          monthly: "<strong class='blue'>{{save}}</strong> with yearly, even more with 2 years"
+          yearly: "<strong class='blue'>{{save}}</strong> with 2 years"
+        save_current_plan_message:
+          monthly: "<strong class='blue'>{{save_current_plan}}</strong> with monthly"
+          yearly: "<strong class='blue'>{{save_current_plan}}</strong> with yearly"
+          2y: "<strong class='blue'>{{save_current_plan}}</strong> with 2 years"
+          3y: "<strong class='blue'>{{save_current_plan}}</strong> with 3 years"
+          5y: "<strong class='blue'>{{save_current_plan}}</strong> with 5 years"
+          10y: "<strong class='blue'>{{save_current_plan}}</strong> with 10 years"
+        errors:
+          card_number: "Please enter a valid card number"
+          cvc: "Please enter a valid security code"
+          card_expiry: "Please enter a valid expiration"
+          postal_code: "Postal code can't be empty"
+        paypal:
+          free_period_description: "You are subscribing to Strikingly {{plan}} plan and will not be billed until {{billing_start_date}}."
+          no_free_period_description: "You are subscribing to Strikingly {{plan}} plan."
+      edit:
+        billing:
+          trial: "Your new plan will begin immediately. After your trial period, on {{billing_start_date}}, you will be billed <strong class='dark'>{{billed_message}}</strong>."
+          paid: "The new plan will begin immediately. Any unused time on your current plan will be deducted from the price of the new plan, so today <strong class='dark'>you only pay the difference, about ${{difference}}.</strong> After that, from {{billing_start_date}}, you will be billed <strong class='dark'>{{billed_message}}.</strong>"
+          paid_additional: "The new plan will begin immediately with your {{add_on_count}} extra page(s). It will cost ${{add_on_price}} each on top of your plan. Any unused time will be deducted from the price of the new plan, so today <strong class='dark'>you only pay the difference, about ${{difference}}.</strong> After that, from {{billing_start_date}}, you will be billed <strong class='dark'>{{billed_message}}.</strong>"
+        save_message_plan_changed: 'Lock in savings with longer plans'
+        save_current_plan_message:
+          monthly: "<strong class='blue'>Save ${{save}} from your current plan</strong> with monthly"
+          yearly: "<strong class='blue'>Save ${{save}} from your current plan</strong> with yearly"
+          2y: "<strong class='blue'>Save ${{save}} from your current plan</strong> with 2 years"
+          3y: "<strong class='blue'>Save ${{save}} from your current plan</strong> with 3 years"
+          5y: "<strong class='blue'>Save ${{save}} from your current plan</strong> with 5 years"
+          10y: "<strong class='blue'>Save ${{save}} from your current plan</strong> with 10 years"
+        confirm:
+          general: "Are you absolutely sure you wish to change your plan? If you're upgrading, your account will be billed accordingly."
+          upgrade: "Are you absolutely sure you wish to upgrade? Your account will be billed on a pro-rated basis."
+          downgrade: "Are you absolutely sure you wish to downgrade? Your account will have a credit for the amount you've already paid."
+    payment:
+      add_ons:
+        types:
+          additional_page: "additional page"
+        errors:
+          network_error: "Failed to submit your changes. Make sure network is okay and try again."
+          not_supported: "Your account does not support purchase of {{add_on_type}} yet."
+          no_active_subscription: "You don't have any active subscription."
+    migration:
+      error: "Oops, something went wrong. Refresh the page and try again; if the error keeps happening please contact support!"
+      this_feature: "this feature"
+      click_to_complete: "Click to complete your update and publish your changes!"
+      styles: "Styles"
+      styles_tip: "Swap templates in the Style menu!"
+      add_new_section: "Add New Section"
+      add_new_section_tip: "Add new functionalities to your site!"
+      layout: "Layout"
+      layout_tip: "Try out new layouts!"
+      support_tip: "Contact us if you'd like to roll back."
+    form_responses:
+      labels:
+        contact: "Contact form"
+        signup: "Signup form"
+      confirm:
+        delete_form_response: "Are you sure you wish to delete these entries?"
+        delete_blog_subscription: "Are you sure you wish to delete these subscription entries? Removing a blog subscription entry will delete the subscription"
+    confirm:
+      disconnect_facebook: "Are you sure you wish to disconnect your Facebook account?"
+      disconnect_linkedin: "Are you sure you wish to disconnect your LinkedIn account?"
+    jquery:
+      errors:
+        required: "This field is required."
+    email_settings:
+      saved: "Saved!"
+
+    settings_dialog:
+      updated: "Updated."
+    landing_page:
+      password_is_too_short: "password is too short (minimum is 6 characters)"
+      password_not_match: "Passwords do not match"
