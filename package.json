@@ -1,6 +1,6 @@
 {
   "name": "find_key_from_yml",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "find key from yml with line number",
   "main": "index.js",
   "bin": {
